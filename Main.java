@@ -110,15 +110,15 @@ public class Main{
         System.out.println("Enter a state to find out it's state capital.");
         System.out.println("Enter the command 'quit' when finished.");
         // Initialize variable to start the loop
-        boolean endLoop = true;
+        boolean EndLoop = true;
         Scanner scanner= new Scanner(System.in);
-        while (endLoop) {
+        while (EndLoop) {
             // Take user input, checking to see if the user has quit
             System.out.println("Please enter a state: ");
             String loopInput = scanner.nextLine();
             if (loopInput.equalsIgnoreCase("quit")) {
                 System.out.println("Terminating Program.");
-                endLoop = false;
+                EndLoop = false;
                 continue;
             }
             // If the user does not quit, check if the input exists as a key in the TreeMap and provide value (state)
